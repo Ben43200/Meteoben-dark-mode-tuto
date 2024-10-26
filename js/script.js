@@ -13,18 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Vérifiez l'état du mode sombre dans le localStorage
   if (localStorage.getItem('darkMode') === 'enabled') {
     document.body.setAttribute('data-theme', 'dark');
-    metaThemeColor.setAttribute('content', '#000000'); // Couleur pour le mode sombre
+    metaThemeColor.setAttribute('content', '#333333'); // Couleur pour le mode sombre
   }
 
   toggleButton.addEventListener('click', () => {
     if (document.body.getAttribute('data-theme') === 'dark') {
       document.body.removeAttribute('data-theme');
       localStorage.setItem('darkMode', 'disabled'); // Mettre à jour le localStorage
-      metaThemeColor.setAttribute('content', '#ffffff'); // Couleur pour le mode clair
+      metaThemeColor.setAttribute('content', '#3a71d8'); // Couleur pour le mode clair
     } else {
       document.body.setAttribute('data-theme', 'dark');
       localStorage.setItem('darkMode', 'enabled'); // Mettre à jour le localStorage
-      metaThemeColor.setAttribute('content', '#3a71d8'); // Couleur pour le mode sombre
+      metaThemeColor.setAttribute('content', '#333333'); // Couleur pour le mode sombre
     }
   });
 });
