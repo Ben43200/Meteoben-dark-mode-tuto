@@ -1,4 +1,4 @@
-body, html{
+body,html{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -32,14 +32,33 @@ body {
   }
   a{
     text-decoration: none;
+    color:#000000;
+  }
+  body[data-theme="dark"] a {
+    
     color: white;
   }
+
+
+/* Styles pour le header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    color:#000000;
+  }
+  
+  /* Styles pour le header en mode sombre */
+  body[data-theme="dark"] header {
+    background-color: #3a71d8;
+  }
+
+
 
   nav > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 1rem; */
-    background-color: #3a71d8;
+    
   }
 
