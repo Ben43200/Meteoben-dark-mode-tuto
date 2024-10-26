@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       document.body.setAttribute('data-theme', 'dark');
       localStorage.setItem('darkMode', 'enabled'); // Mettre à jour le localStorage
-      metaThemeColor.setAttribute('content', '#000000'); // Couleur pour le mode sombre
+      metaThemeColor.setAttribute('content', '#3a71d8'); // Couleur pour le mode sombre
     }
   });
 });
