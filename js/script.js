@@ -1,19 +1,5 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   const toggleButton = document.getElementById('dark-mode-toggle');
-//   // Vérifiez l'état du mode sombre dans le localStorage
-//   if (localStorage.getItem('darkMode') === 'enabled') {
-//     document.body.setAttribute('data-theme', 'dark');
-//   }
-//   toggleButton.addEventListener('click', () => {
-//     if (document.body.getAttribute('data-theme') === 'dark') {
-//       document.body.removeAttribute('data-theme');
-//       localStorage.setItem('darkMode', 'disabled'); // Mettre à jour le localStorage
-//     } else {
-//       document.body.setAttribute('data-theme', 'dark');
-//       localStorage.setItem('darkMode', 'enabled'); // Mettre à jour le localStorage
-//     }
-//   });
-// });
+// /dark-mode js
+// Créez un bouton pour activer/désactiver le mode sombre
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('dark-mode-toggle');
