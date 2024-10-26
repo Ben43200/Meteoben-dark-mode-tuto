@@ -1,110 +1,53 @@
- /* body,html{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    color:white;
-    height: 100dvh
-}
-
-
-
-
-/* Styles par défaut (mode clair) 
-body {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  /* Styles pour le mode sombre 
-  body[data-theme="dark"] {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-
-
-  li {
-    list-style-type: none;
-   
-  }
-  a{
-    text-decoration: none;
-    color:#000000;
-  }
-  body[data-theme="dark"] a {
-    
-    color: white;
-  }
-
-
-/* Styles pour le header 
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    color:#000000;
-  }
-  
-  /* Styles pour le header en mode sombre 
-  body[data-theme="dark"] header {
-    background-color: #3a71d8;
-  }
-
-
-
-  nav > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-  } */
-
-
-
-
-
-
-
-
-
-
   :root {
     --background-color: #ffffff;
     --text-color: #000000;
     --header-background-color: #3a71d8;
+    --header-text-color: #000000;
+ 
    
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  header {
-    background-color: var(--header-background-color);
-    color: var(--text-color);
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: inherit;
   }
   
   body[data-theme="dark"] {
     --background-color: #000000;
     --text-color: #ffffff;
     --header-background-color: #333333;
+    --header-text-color: #ffffff;
   }
+
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    height: 100dvh;
+    padding:0;
+  }
+
+
+ 
+  
+  header {
+        background-color: var(--header-background-color);
+        color: var(--header-text-color);
+        width: 100%; /* Prend toute la largeur de la page */
+        padding: 20px; /* Ajoute un padding pour l'espacement interne */
+        box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+        margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
 
